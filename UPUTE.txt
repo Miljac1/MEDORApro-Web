@@ -1,0 +1,2 @@
+# MEDORApro Web ULTRA HD v3
+Učitajte sve datoteke iz ove mape u GLAVNI direktorij javnog repozitorija MEDORApro-Web. Nije potrebno brisati stare slikovne datoteke. Zamjenjuju se index.html, styles.css i script.js, a nove slike imaju jedinstvene -ultra nazive. Slike su izvedene iz postojećih originala 1122×1402 i dvostruko resamplirane: to nije izvorna 4K fotografija. Aplikacija se ne mijenja.
