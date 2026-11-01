@@ -32,3 +32,7 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
 @media(min-width:1450px){.wrap{width:min(1320px,calc(100% - 100px))}.hero-grid{gap:85px}.hero-media{max-width:590px;width:100%}.hero h1{letter-spacing:-.06em}}
 @media(max-width:700px){.top-inner{gap:8px}.brand{flex-shrink:1;min-width:0}.brand-icon{flex-shrink:0}.right{flex-shrink:0}.hero-grid{gap:30px}.hero-media{padding:9px;border-radius:20px}.hero-media img{border-radius:13px}.feature-grid{gap:14px}.feature{padding:23px 22px;min-height:0}.feature h3{margin:9px 0 6px}.feature p{line-height:1.55}.privacy-logo{max-height:270px}.stats-row>div{text-align:center}.section{overflow-wrap:anywhere}}
 @media(hover:none){.feature:hover{transform:none}}
+
+/* v4.8: promo 3D scena u sekciji privatnosti */
+.privacy-logo{width:min(100%,520px);max-height:none;aspect-ratio:3/2;object-fit:contain;border-radius:18px;box-shadow:0 24px 65px rgba(0,0,0,.42),0 0 35px rgba(29,149,255,.16)}
+@media(max-width:700px){.privacy-logo{width:100%;max-height:none}}
