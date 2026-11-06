@@ -264,3 +264,56 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
         width: 300px !important;
     }
 }
+
+
+/* MEDORApro - uklanjanje vanjskih okvira slika */
+.hero-media,
+.family-image {
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+.hero-media::before,
+.hero-media::after,
+.family-image::before,
+.family-image::after {
+    content: none !important;
+    display: none !important;
+}
+
+.hero-media > img,
+.family-image > img {
+    display: block !important;
+    width: auto !important;
+    max-width: min(100%, 340px) !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    object-fit: contain !important;
+}
+
+.hero-media .media-halo {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .hero-media > img,
+    .family-image > img {
+        max-width: min(100%, 300px) !important;
+    }
+}
