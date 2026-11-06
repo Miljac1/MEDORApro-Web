@@ -111,303 +111,60 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
 }
 
 
-/* MEDORApro - okviri prilagođeni slikama */
 
-/* Prva slika */
-.hero-media {
-    width: fit-content !important;
-    max-width: min(100%, 380px) !important;
-    height: auto !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    border-radius: 18px !important;
-    overflow: hidden !important;
-}
-
-.hero-media > img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    border-radius: 18px !important;
-}
-
-/* Pogled u budućnost - Family */
-.family-image {
-    width: fit-content !important;
-    max-width: min(100%, 380px) !important;
-    height: auto !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    border-radius: 18px !important;
-    overflow: hidden !important;
-}
-
-.family-image > img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    border-radius: 18px !important;
-}
-
-@media (max-width: 768px) {
-    .hero-media, .family-image {
-        max-width: min(100%, 320px) !important;
-    }
-}
-
-/* MEDORApro - uklanjanje prevelikih okvira */
+/* Personal i Family — jedinstveni završni stil */
 .hero-media,
-.family-image {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    max-width: 340px !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    overflow: visible !important;
-}
-
-.hero-media > img,
-.family-image > img {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    border-radius: 12px !important;
-    box-shadow: none !important;
-}
-
-.hero-media .media-halo,
-.hero-media .image-tag {
-    display: none !important;
-}
-
-@media (max-width: 768px) {
-    .hero-media,
-    .family-image {
-        max-width: 300px !important;
-    }
-}
-
-/* MEDORApro - Personal i Family: uski, zaobljeni okviri */
-
-/* Prva slika */
-.hero-grid .hero-media {
-    width: 340px !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    height: fit-content !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 24px !important;
-    overflow: hidden !important;
-    box-shadow: none !important;
-}
-
-.hero-grid .hero-media > img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    border-radius: 24px !important;
-}
-
-/* Family */
+.family-image,
+.hero-grid .hero-media,
 .family-grid .family-image {
-    width: 340px !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    height: fit-content !important;
+    width: min(100%, 340px) !important;
+    max-width: 340px !important;
+    height: auto !important;
     min-height: 0 !important;
-    padding: 0 !important;
     margin: 0 auto !important;
-    border: none !important;
-    border-radius: 24px !important;
-    overflow: hidden !important;
-    background: transparent !important;
-}
-
-.family-grid .family-image > img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    border-radius: 24px !important;
-}
-
-@media (max-width: 768px) {
-    .hero-grid .hero-media,
-    .family-grid .family-image {
-        width: 300px !important;
-    }
-}
-
-
-/* MEDORApro - uklanjanje vanjskih okvira slika */
-.hero-media,
-.family-image {
-    background: none !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
     padding: 0 !important;
-    border-radius: 0 !important;
-    overflow: visible !important;
-    width: fit-content !important;
-    max-width: 100% !important;
-    min-height: 0 !important;
-    height: auto !important;
+    border: none !important;
+    border-radius: 24px !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    overflow: hidden !important;
 }
 
 .hero-media::before,
 .hero-media::after,
 .family-image::before,
-.family-image::after {
-    content: none !important;
-    display: none !important;
-}
-
-.hero-media > img,
-.family-image > img {
-    display: block !important;
-    width: auto !important;
-    max-width: min(100%, 340px) !important;
-    height: auto !important;
-    max-height: none !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    object-fit: contain !important;
-}
-
+.family-image::after,
 .hero-media .media-halo {
     display: none !important;
 }
 
-@media (max-width: 768px) {
-    .hero-media > img,
-    .family-image > img {
-        max-width: min(100%, 300px) !important;
-    }
-}
-
-/* PERSONAL — uklanjanje vanjskog okvira */
-.hero .hero-media {
-    display: block !important;
-    width: fit-content !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    background: transparent !important;
-    background-image: none !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    overflow: visible !important;
-}
-
-.hero .hero-media::before,
-.hero .hero-media::after,
-.hero .hero-media .media-halo {
-    display: none !important;
-}
-
-.hero .hero-media > img {
-    display: block !important;
-    width: auto !important;
-    max-width: 100% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    background: transparent !important;
-}
-
-/* MEDORApro — nježni rubovi Personal i Family slika */
+.hero-media > img,
+.family-image > img,
 .hero .hero-media > img,
 .family .family-image > img {
-    border-radius: 18px !important;
-    -webkit-mask-image: radial-gradient(
-        ellipse 98% 98% at center,
-        black 86%,
-        rgba(0,0,0,.98) 94%,
-        transparent 100%
-    ) !important;
-    mask-image: radial-gradient(
-        ellipse 98% 98% at center,
-        black 86%,
-        rgba(0,0,0,.98) 94%,
-        transparent 100%
-    ) !important;
-}
-
-/* Zaobljeni kutovi promotivnih slika */
-.hero-media img,
-.family-image img {
-  border-radius: 20px !important;
-  overflow: hidden;
-}
-
-
-/* MEDORApro – završni prikaz Personal i Family */
-.hero-media,
-.family-image {
-    background: transparent !important;
-    background-image: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    overflow: visible !important;
-}
-
-.hero-media::before,
-.hero-media::after,
-.family-image::before,
-.family-image::after {
-    display: none !important;
-}
-
-.hero-media img,
-.family-image img,
-.hero-media > img,
-.family-image > img {
     display: block !important;
     width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
     object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
     border-radius: 24px !important;
-    clip-path: inset(0 round 24px) !important;
     box-shadow: none !important;
-    border: 0 !important;
+    background: transparent !important;
+    clip-path: none !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+}
+
+@media(max-width:700px) {
+    .hero-media,
+    .family-image,
+    .hero-grid .hero-media,
+    .family-grid .family-image {
+        width: min(100%, 300px) !important;
+    }
 }
