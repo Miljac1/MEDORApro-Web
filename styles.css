@@ -74,3 +74,38 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
 .brand-icon {
  object-fit:contain;
 }
+
+
+/* MEDORApro - završno poravnanje početne slike */
+.hero-grid {
+    align-items: center !important;
+}
+
+.hero-media {
+    width: 100% !important;
+    max-width: 410px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.hero-media > img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 570px !important;
+    object-fit: contain !important;
+    border-radius: 18px !important;
+}
+
+.hero-media .image-tag {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .hero-media {
+        max-width: 330px !important;
+    }
+    .hero-media > img {
+        max-height: 460px !important;
+    }
+}
