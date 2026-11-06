@@ -378,3 +378,36 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
   border-radius: 20px !important;
   overflow: hidden;
 }
+
+
+/* MEDORApro – završni prikaz Personal i Family */
+.hero-media,
+.family-image {
+    background: transparent !important;
+    background-image: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+}
+
+.hero-media::before,
+.hero-media::after,
+.family-image::before,
+.family-image::after {
+    display: none !important;
+}
+
+.hero-media img,
+.family-image img,
+.hero-media > img,
+.family-image > img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 24px !important;
+    clip-path: inset(0 round 24px) !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
