@@ -160,3 +160,49 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
         max-width: min(100%, 320px) !important;
     }
 }
+
+/* MEDORApro - uklanjanje prevelikih okvira */
+.hero-media,
+.family-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    overflow: visible !important;
+}
+
+.hero-media > img,
+.family-image > img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+
+.hero-media .media-halo,
+.hero-media .image-tag {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .hero-media,
+    .family-image {
+        max-width: 300px !important;
+    }
+}
