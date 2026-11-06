@@ -353,3 +353,21 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
     box-shadow: none !important;
     background: transparent !important;
 }
+
+/* MEDORApro — nježni rubovi Personal i Family slika */
+.hero .hero-media > img,
+.family .family-image > img {
+    border-radius: 18px !important;
+    -webkit-mask-image: radial-gradient(
+        ellipse 98% 98% at center,
+        black 86%,
+        rgba(0,0,0,.98) 94%,
+        transparent 100%
+    ) !important;
+    mask-image: radial-gradient(
+        ellipse 98% 98% at center,
+        black 86%,
+        rgba(0,0,0,.98) 94%,
+        transparent 100%
+    ) !important;
+}
