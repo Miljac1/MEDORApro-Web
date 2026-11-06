@@ -371,3 +371,10 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
         transparent 100%
     ) !important;
 }
+
+/* Zaobljeni kutovi promotivnih slika */
+.hero-media img,
+.family-image img {
+  border-radius: 20px !important;
+  overflow: hidden;
+}
