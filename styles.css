@@ -206,3 +206,61 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
         max-width: 300px !important;
     }
 }
+
+/* MEDORApro - Personal i Family: uski, zaobljeni okviri */
+
+/* Prva slika */
+.hero-grid .hero-media {
+    width: 340px !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: fit-content !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+    box-shadow: none !important;
+}
+
+.hero-grid .hero-media > img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 24px !important;
+}
+
+/* Family */
+.family-grid .family-image {
+    width: 340px !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: fit-content !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    border: none !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+    background: transparent !important;
+}
+
+.family-grid .family-image > img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 24px !important;
+}
+
+@media (max-width: 768px) {
+    .hero-grid .hero-media,
+    .family-grid .family-image {
+        width: 300px !important;
+    }
+}
