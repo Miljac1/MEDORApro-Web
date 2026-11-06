@@ -46,3 +46,31 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
 .medora-promo-poster img{display:block;width:100%;height:auto;object-fit:contain;border-radius:12px}
 .medora-promo-note{text-align:center;color:#bdd0e3;font-size:14px;margin:20px auto 0}
 @media(max-width:700px){.medora-video-frame{max-width:345px;padding:7px}.medora-promo-poster{padding:7px}}
+
+/* MEDORApro - nova galerija */
+.medora-new-gallery {
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:24px;
+}
+.medora-new-gallery figure {
+ margin:0;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ background:#071b36;
+ border:1px solid rgba(70,180,255,.3);
+ border-radius:20px;
+ padding:14px;
+}
+.medora-new-gallery img {
+ display:block;
+ width:100%;
+ height:auto;
+ max-height:650px;
+ object-fit:contain;
+ cursor:zoom-in;
+}
+.brand-icon {
+ object-fit:contain;
+}

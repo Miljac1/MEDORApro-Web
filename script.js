@@ -61,3 +61,18 @@ closeButton.addEventListener('click',close);
 viewer.querySelector('[data-close-viewer]').addEventListener('click',close);
 document.addEventListener('keydown',e=>{if(viewer.hidden)return;if(e.key==='Escape')close();else if(e.key==='Tab'){e.preventDefault();closeButton.focus()}});
 })();
+
+document.querySelectorAll(".medora-new-gallery img").forEach(img => {
+ img.addEventListener("click", () => {
+   const viewer = document.getElementById("imageViewer");
+   const viewerImage = document.getElementById("viewerImage");
+   const viewerTitle = document.getElementById("viewerTitle");
+   if (!viewer || !viewerImage) return;
+   viewerImage.src = img.src;
+   viewerImage.alt = img.alt;
+   if (viewerTitle) viewerTitle.textContent = img.alt;
+   viewer.hidden = false;
+   viewer.setAttribute("aria-hidden", "false");
+   document.body.style.overflow = "hidden";
+ });
+});
