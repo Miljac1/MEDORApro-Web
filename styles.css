@@ -109,3 +109,54 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
         max-height: 460px !important;
     }
 }
+
+
+/* MEDORApro - okviri prilagođeni slikama */
+
+/* Prva slika */
+.hero-media {
+    width: fit-content !important;
+    max-width: min(100%, 380px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+.hero-media > img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 18px !important;
+}
+
+/* Pogled u budućnost - Family */
+.family-image {
+    width: fit-content !important;
+    max-width: min(100%, 380px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+.family-image > img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 18px !important;
+}
+
+@media (max-width: 768px) {
+    .hero-media, .family-image {
+        max-width: min(100%, 320px) !important;
+    }
+}
