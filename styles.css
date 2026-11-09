@@ -355,3 +355,30 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
   box-shadow: none !important;
   filter: none !important;
 }
+
+/* MEDORApro - izvorni okrugli žig */
+.medora-hero-stamp {
+  display: block !important;
+  width: 105px !important;
+  height: 105px !important;
+  min-width: 105px !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  flex: 0 0 105px !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+@media (max-width: 600px) {
+  .medora-hero-stamp {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    flex-basis: 90px !important;
+  }
+}
