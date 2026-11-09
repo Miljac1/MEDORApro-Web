@@ -268,3 +268,23 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
     transition: none;
   }
 }
+
+/* MEDORApro - čitljiviji razmaci promotivnih naslova */
+.medora-tester-promo h2 {
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  line-height: 1.25;
+}
+
+.medora-tester-promo-gift {
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 1.35;
+}
+
+@media (max-width: 600px) {
+  .medora-tester-promo h2 {
+    letter-spacing: 1.2px;
+    word-spacing: 4px;
+  }
+}
