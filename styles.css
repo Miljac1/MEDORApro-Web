@@ -168,3 +168,103 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
         width: min(100%, 300px) !important;
     }
 }
+
+
+/* MEDORApro - istaknuta prijava testera */
+.medora-tester-promo {
+  padding: 24px 0 12px;
+  background: #06172d;
+}
+.medora-tester-promo-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  text-align: center;
+  border: 2px solid #369ce0;
+  border-radius: 22px;
+  background: linear-gradient(145deg,#102f52,#07172d 75%);
+  box-shadow: 0 14px 45px rgba(0,0,0,.27),
+              inset 0 0 32px rgba(41,159,232,.09);
+}
+.medora-tester-promo-label {
+  color: #a4cce9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.medora-tester-promo h2 {
+  color: #fff;
+  font-size: clamp(25px,4.2vw,46px);
+  font-weight: 850;
+  line-height: 1.15;
+  margin: 20px 0;
+}
+.medora-tester-promo-gift {
+  color: #f4c55f;
+  font-size: clamp(22px,3.5vw,39px);
+  line-height: 1.22;
+  font-weight: 850;
+  text-shadow: 0 2px 18px rgba(244,197,95,.15);
+}
+.medora-tester-promo-description {
+  max-width: 650px;
+  margin: 22px auto;
+  color: #e1eaf6;
+  font-size: clamp(15px,1.8vw,19px);
+  line-height: 1.6;
+}
+.medora-tester-promo-limited {
+  color: #f4c55f;
+  font-size: clamp(19px,2.5vw,25px);
+  font-weight: 850;
+  margin: 22px 0;
+}
+.medora-tester-promo-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 100%;
+  min-height: 58px;
+  padding: 14px 35px;
+  border-radius: 12px;
+  background: #1683ce;
+  border: 1px solid #68c0ff;
+  color: #fff !important;
+  font-size: clamp(15px,2vw,19px);
+  font-weight: 800;
+  text-decoration: none !important;
+  box-shadow: 0 6px 24px rgba(22,131,206,.3);
+  transition: background .2s, transform .2s;
+}
+.medora-tester-promo-button:hover {
+  background: #086eae;
+  transform: translateY(-2px);
+}
+.medora-tester-promo-button:focus-visible {
+  outline: 3px solid #f4c55f;
+  outline-offset: 4px;
+}
+.medora-tester-promo-note {
+  max-width: 600px;
+  margin: 19px auto 0;
+  color: #aec1d6;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media(max-width:600px) {
+  .medora-tester-promo { padding: 12px 0; }
+  .medora-tester-promo-card {
+    padding: 28px 15px;
+    border-radius: 16px;
+  }
+  .medora-tester-promo-button {
+    width: 100%;
+    padding: 14px 12px;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .medora-tester-promo-button {
+    transition: none;
+  }
+}
