@@ -288,3 +288,49 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
     word-spacing: 4px;
   }
 }
+
+/* MEDORApro: zlatni OFFLINE slogan, crta i izvorni žig */
+.medora-hero-offline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 18px 0 22px;
+  max-width: 660px;
+}
+.medora-offline-copy {
+  min-width: 0;
+  flex: 1;
+  text-align: center;
+}
+.medora-offline-promise {
+  display: block;
+  color: #f4c55f;
+  font-size: clamp(17px, 2.25vw, 25px);
+  font-weight: 850;
+  line-height: 1.32;
+  letter-spacing: .3px;
+  text-shadow: 0 1px 10px rgba(244,197,95,.15);
+}
+.medora-offline-goldline {
+  display: block;
+  width: 82%;
+  height: 2px;
+  margin: 15px auto 0;
+  border-radius: 100%;
+  background: linear-gradient(90deg,transparent,#f4c55f 25%,#fff0b5 50%,#f4c55f 75%,transparent);
+  box-shadow: 0 0 10px rgba(244,197,95,.6);
+}
+.medora-hero-stamp {
+  width: clamp(85px, 11vw, 135px);
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(30,129,255,.25));
+}
+@media(max-width:600px) {
+  .medora-hero-offline { gap: 8px; margin: 16px 0 20px; }
+  .medora-offline-promise { font-size: clamp(15px, 4vw, 19px); letter-spacing: 0; }
+  .medora-hero-stamp { width: clamp(76px, 23vw, 105px); }
+  .medora-offline-goldline { margin-top: 12px; }
+}
