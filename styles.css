@@ -345,3 +345,13 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
   box-shadow: 0 0 19px rgba(69,183,255,.45);
   filter: none;
 }
+
+/* MEDORApro - izvorni žig bez ukrasa */
+.medora-hero-stamp {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
