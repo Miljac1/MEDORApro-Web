@@ -409,3 +409,24 @@ html{-webkit-text-size-adjust:100%}body{-webkit-font-smoothing:antialiased;text-
     flex-basis: 90px !important;
   }
 }
+
+/* MEDORApro: potpuno prozirni prikaz žiga */
+#medora-hero-offline,
+#medora-hero-offline .medora-hero-stamp {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+#medora-hero-offline .medora-hero-stamp {
+  display: block !important;
+  width: 90px !important;
+  height: 90px !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
